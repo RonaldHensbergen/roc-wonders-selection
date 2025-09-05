@@ -1,0 +1,8 @@
+POSTGRES_ADDRESS = 'localhost'
+POSTGRES_PORT = '5432'
+POSTGRES_USERNAME = 'postgres'
+POSTGRES_PASSWORD = 'L4kbDruSVT4ibcp'
+POSTGRES_DBNAME = 'roc'
+
+# Create connection string
+connection_string = f'postgresql://{POSTGRES_USERNAME}:{POSTGRES_PASSWORD}@{POSTGRES_ADDRESS}:{POSTGRES_PORT}/{POSTGRES_DBNAME}'
