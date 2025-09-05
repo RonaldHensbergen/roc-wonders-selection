@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from Helpers.connectors import pg_connection_string
 
 # Create engine
-engine = create_engine(connection_string)
+engine = create_engine(pg_connection_string)
 
 query = "SELECT * FROM vw_current_situation"
 data = pd.read_sql_query(query, engine)
