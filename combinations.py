@@ -14,7 +14,7 @@ query = "SELECT id FROM wonders WHERE allied = true"
 group2 = pd.read_sql_query(query, engine)
 
 # Randomly select 4 values from each group
-selected_group1 = group1.sample(n=4, random_state=1).tolist()  # random_state for reproducibility
+selected_group1 = group1.sample(n=4, random_state=1).to_dict().values()  # random_state for reproducibility
 selected_group2 = group2.sample(n=4, random_state=1).to_dict().values()
 
 # Generate all combinations of the selected values
